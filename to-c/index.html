@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-Cサイトの作成</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <header>
+        <h1>Groove</h1>
+        <p class="tag-line">アナログの音で、心を揺さぶる</p>
+        <p class="logo">ロゴ</p>
+    </header>
+    <div class="circle"><img src="img/circle.svg" alt=""></div>
+
+    <nav class="pc-nav">
+        <ul>
+            <li><a href="#top">トップ</a></li>
+            <li><a href="#item">商品一覧</a></li>
+            <li><a href="#shop">店舗情報</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#staff">ご挨拶</a></li>
+
+            <li class="slide" target="_blank"></li><!-- ホバー要素 -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <input type="checkbox" id="ham-btn">
+        <label for="ham-btn" class="circle-btn">
+            <span class="ham-bar"></span>
+        </label>
+
+        <nav class="sp-nav">
+        <ul>
+            <li><a href="#top">トップ</a></li>
+            <li><a href="#item">商品一覧</a></li>
+            <li><a href="#shop">店舗情報</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#staff">ご挨拶</a></li>
+            <li><a href="ここに英語のページのURL">to English</a></li>
+
+        </ul>
+        </nav>
+
+        <div class="main-visual">
+            <p><img src="img/main02.jpg" alt=""></p>
+            <p><img src="img/main01.jpg" alt=""></p>
+        </div><!-- /.main-visual -->
+        <div class="main-copy">
+        </div><!-- /.main-copy -->
+
+        <section id="item">
+            <h2>商品一覧</h2>
+            <div class="grid-wrapper">
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/04.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/03.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/02.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/06.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/05.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/01.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/07.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/08.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+                <div class="grid-box">
+                    <h3 class="item-name">mix1999</h3>
+                    <p class="item-photo"><img src="img/09.jpg" alt=""></p>
+                    <p class="price">1000円</p>
+                </div><!-- /.grid-box -->                
+            </div><!-- /.grid-wrapper -->
+        </section>
+
+        <section id="shop">
+            <h2>店舗情報</h2>
+        </section>
+
+        <section ida="faq">
+            <h2>よくある質問</h2>
+        </section>
+
+        <section ida="staff">
+            <h2>ご挨拶</h2>
+        </section>
+
+        <footer></footer>
+    </div><!-- /.container -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js' integrity='sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==' crossorigin='anonymous'></script>
+    <script>
+        // jqueryで.s p-nab aをクリックしたら.sp-navを閉じる
+        $('.sp-nav a').on('click',function(){
+            $('.sp-nav a').on(click,function(){
+            $('#ham-btn').prop('checked',false);
+            });
+        });
+    </script>
+
+</body>
+</html>
